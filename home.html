@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .btn button {
+        padding: 10px;
+            margin: 10px;
+            cursor: pointer; 
+            background: rgb(0, 148, 223);
+            color: white;font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn button:hover {
+            background: rgb(61, 172, 236);
+        }
+    </style>
 </head>
+
 <body>
     <h1>ASCII-ART-WEB</h1>
 
@@ -16,14 +32,15 @@
             <input type="radio" name="banner" id="" value="thinkertoy">thinkertoy
         </div>
         <div class="btn">
-            <button type="submit">Submit</button>
+            <button type="submit" >Submit</button>
         </div>
     </form>
-{{if .Res }}
+    {{if .Res }}
     <h2 class="a">Result:</h2>
     <div class="result">
         <pre>{{.Res}}</pre>
     </div>
-{{end}}
+    {{end}}
 </body>
+
 </html>
